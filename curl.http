@@ -4,7 +4,7 @@ Accept: application/json;charset=UTF-8
 
 {
   "model": "gemma3:4b-it-q4_K_M",
-  "prompt": "Что ты знаешь о группе sum-41, ограничься сотней слов",
+  "prompt": "Что ты знаешь о группе sum-41",
   "stream": false,
   "options" : {
     "nvm_predict": 100,
