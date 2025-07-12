@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
         eventSource.onmessage = function(event) {
             const data = JSON.parse(event.data);
             let token = data.text;
-            console.log(token);
             fullText += token;
             // Преобразуем Markdown в HTML (при условии, что marked.js подключен)
             aiBubble.innerHTML = marked.parse(fullText);
