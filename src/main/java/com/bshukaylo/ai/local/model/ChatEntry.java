@@ -23,6 +23,7 @@ public class ChatEntry {
     private String content;
 
     @Enumerated(EnumType.STRING)
+    @Column
     private Role role;
 
     @CreationTimestamp
