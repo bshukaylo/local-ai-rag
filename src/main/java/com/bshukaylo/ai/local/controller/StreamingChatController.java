@@ -24,7 +24,6 @@ public class StreamingChatController {
     @GetMapping(value = "/chat-stream/{chatId}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public SseEmitter talkToModel(@PathVariable Long chatId,
                                   @RequestParam String userPrompt) {
-        SseEmitter sseEmitter = chatService.proceedInteractionWithStreaming(chatId, userPrompt);
-        return sseEmitter;
+        return chatService.proceedInteractionWithStreaming(chatId, userPrompt);
     }
 }
